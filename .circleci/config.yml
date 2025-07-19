@@ -22,7 +22,7 @@ jobs:
           name: Configure Kaggle API Credentials
           # These commands create the ~/.kaggle directory and kaggle.json file
           # using environment variables set in CircleCI.
-          # KAGGLE_USERNAME and KAGGLE_KEY must be set in your CircleCI project settings.
+          # Set KAGGLE_USERNAME and KAGGLE_KEY in your CircleCI project settings.
           command: |
             mkdir -p ~/.kaggle
             echo '{"username":"'${KAGGLE_USERNAME}'","key":"'${KAGGLE_KEY}'"}' > ~/.kaggle/kaggle.json
